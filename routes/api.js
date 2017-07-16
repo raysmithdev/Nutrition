@@ -7,8 +7,8 @@ var
 // post route to the Nutritionix API to retrieve nutionion info based upon what the user searches for
 apiRouter.post('/api', function(req, res) {
   var body = {
-    appId:"027e373f",
-    appKey:"4d32fcc05f9358d893602b98daa6a6f7",
+    appId:"af369652",
+    appKey:"42996dc2c5319ecc938c62dc43a590a8",
     query: req.body.query,
     results: 5,
     fields:["item_name","brand_name","nf_serving_size_qty", "nf_serving_size_unit", "nf_calories", "nf_protein", "nf_total_fat", "nf_total_carbohydrate", "images_front_full_url"],
