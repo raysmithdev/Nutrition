@@ -5,6 +5,7 @@ bodyParser = require('body-parser'),
 request = require('request'),
 mongoose = require('mongoose'),
 logger = require('morgan'),
+config = require('./config.js'),
 dotenv = require('dotenv').load({silent: true}), // silent: true just ensures the program doesn't throw an error if it can't find the dotenv file
 ejs = require('ejs'),
 ejsLayouts = require('express-ejs-layouts'),
@@ -27,9 +28,9 @@ userRoutes = require('./routes/users.js'),
 apiRoutes = require('./routes/api.js')
 
 // connect to mLabs database
-mongoose.connect(process.env.DB_URL, function(err){
+mongoose.connect(config.DATABASE_URL, function(err){
   if (err) return console.log(err);
-  console.log("Connected to MongoDB (project-3)");
+  console.log("Connected to MongoDB (Nutrition Nut)");
 })
 
 // middleware
@@ -89,7 +90,7 @@ app.listen(PORT, function(){
 app.get('/auth/google',
 passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/plus.login'] }));
 
-app.get('/auth/google/callback',
+app.get('/auth/google/callback/',
 passport.authenticate('google', { failureRedirect: '/login' }),
 function(req, res) {
   res.redirect('/');

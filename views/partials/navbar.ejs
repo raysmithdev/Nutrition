@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse" style="border-radius:0px;">
+  <a class="navbar-brand" href="/profile"><img alt="Brand" src='/images/logo.gif' class="img-responsive"></a>
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-right">
+      <% if (!user) { %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b class='navbar-button'>Login</b> <span class="caret"></span></a>
+          <ul id="login-dp" class="dropdown-menu">
+            <li>
+              <div class="row">
+                <div class="col-md-12">
+                  <li>
+                    <form action="/login" method="post" id='navbar-login'>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-info btn-block" style=''>Login</button>
+                        <a href="/auth/google" style='background:#dd4b39' class="btn btn-social btn-block btn-google-plus"><span class="fa fa-google-plus"></span></a>
+                      </div>
+                    </li>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      <% } else { %>
+        <li><a href='/main' style='color:#e9be56'>Add a meal</a></li>
+        <% if (user.local.name ) { %>
+          <li><a href='/profile' style='color:#e9be56'><%= user.local.name %></a></li>
+        <% } else { %>
+          <li><a href='/profile' style='color:#e9be56'><%= user.google.name %></a></li>
+        <% } %>
+          <li><a href='/logout' style='color:#e9be56'>Logout</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>

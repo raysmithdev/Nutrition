@@ -5,5 +5,5 @@ deploy:
   api_key:
     secure: YgDY3VMvWBGKkbate5Ge8SGB1XEFhwO8Brq5KOVsh3O6QEm70RF8zvc1djQjjBjPI3yMdGhMfr+hJCd3/+D38JtDB4Npr2Jpg1YYPP1blOMHGTU4ZfhgPhSeF4cHAUs/EFkINkHlDhCdxHwYp/ytuexd8wymKNkc6MmHfSlxh8WH5NCU71PNHflLQCHFENz7diVCpGMJSOp+j2/oeo4KSL/hWe9jaM8Jcs3gsjjjzs9hTVKFB7p0FVvNf06NDSJ7/VyWKvOZVa/sxn9EEn0WYRrP5bLszjfXqQTJfEb2TPRWeOe0pJ6fQdbMmta6w4wI3vl9WK42eFAeaQ8GT2NADEHumOZWO6HNKuMlATz1pdVutEfPIdatwk1yX9NI9fs6Z5wQN7Cpgl9ZA0hr6FEvZo/LGP00ABjd7EM0U+0hoLAJTEUeCTdXTn/+ipKXJMOzN0aWPT5CSvNqPZ+2atoBNcksFc3XlqeZyzn7lKIMQGetKgpt7CWRIlHZlS+thw6XWQxvqDJkJvWztWxa06/Izcvt2D7+k1ohceBsn5AF+Z7eblQNyv5qLCToRY06myOj0CAISGz+3exUAPvgBZB2lHqED9NtUiS2yfrXM9S6Ih87w8q/wcabd26Jp3euIklATnQsqe7O9jNNF6KLLwNS6ux6s/jpVDf+LXuUUtqOKdk=
   app: Nutrition
-  on: https://calm-sea-24943.herokuapp.com/
+  on: https://nutrition-app.herokuapp.com/
     repo: jnintal/Nutrition
