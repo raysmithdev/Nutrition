@@ -7,7 +7,8 @@ User = require('../models/User.js')
 passport.use(new GoogleStrategy({
   clientID: "608715747760-anob18f75a6p8u5943ve8v4ts4unbkpr.apps.googleusercontent.com",
   clientSecret: "ZmHUZmLrShHnapIkJXKEu3ie",
-  callbackURL: "/auth/google/callback/"
+  callbackURL: "/auth/google/callback/",
+  passReqToCallback: true
 },
 function(token, tokenSecret, profile, done){
   console.log("Inside of GoogleStrategy");

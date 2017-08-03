@@ -4,11 +4,11 @@ Objective:
 
 Nutrition Nut is a health oriented site where the user can log and track their meals during the day to see how many calories they've consumed.
 
-Installation
+Installation:
 
 No installation required, click here to acccess the site and get started!
 
-Project Requirements
+Project Requirements:
 
 The guidelines listed below were provided by the project markdown:
 
@@ -19,9 +19,9 @@ Authenticate users using at least one OAuth provider
 Restrict access to the Creation, Updating, and Deletion of resources using an authorization middleware function
 Be deployed online using Heroku
 
-Necessary Deliverables
+Necessary Deliverables:
 
-A working app, built by the whole team, hosted somewhere on the Internet
+A working app, built by me, hosted somewhere on the Internet
 A client application that consumes our own API, hosted somewhere on the internet
 A link to our hosted, working app in the URL section of our Github repo
 A Git repository hosted on Github, with frequent commits from every team member dating back to the very beginning of the project

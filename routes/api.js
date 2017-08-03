@@ -3,7 +3,6 @@ var
   apiRouter = express.Router(),
   request = require('request')
 
-
 // post route to the Nutritionix API to retrieve nutionion info based upon what the user searches for
 apiRouter.post('/api', function(req, res) {
   var body = {

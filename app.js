@@ -1,32 +1,61 @@
 var MOCK_STATUS_UPDATES = {
-    "foodSchema": [{
-    meal: 'Peanut Butter',
-    brand: 'Whole Foods 365',
-    servingSize: 1,
-    servingSizeUnits: '1 cup',
-    calories: 500,
-    protein: 23,
-    fat: 4,
-    carbohydrates: 8,
-    created_at: Date
-    }],
+    "food": [{
+        meal: 'Peanut Butter',
+        brand: 'Whole Foods 365',
+        servingSize: 1,
+        servingSizeUnits: '1 cup',
+        calories: 500,
+        protein: 23,
+        fat: 4,
+        carbohydrates: 8,
+        created_at: Date.now()
+    },
+    {
+        meal: 'Peanut Butter',
+        brand: 'Whole Foods 365',
+        servingSize: 1,
+        servingSizeUnits: '1 cup',
+        calories: 500,
+        protein: 23,
+        fat: 4,
+        carbohydrates: 8,
+        created_at: Date.now()
+    }
+    ],
 
-    "userSchema":[{
-    local: {
-        name: 'John Doe',
-        email: 'john.doe@hotmail.com',
-        password: 'john123'
-    },
-    google: {
-        id: String,
-        token: String,
-        email: String,
-        name: String
-    },
-    food: [foodSchema]
+    "user" :[{
+        {
+            name: 'John Doe',
+            email: 'john.doe@hotmail.com',
+            password: 'john123'
+        },
+        }, 
+        {
+        {
+            name: 'John Doe',
+            email: 'john.doe@hotmail.com',
+            password: 'john123'
+        },
+        google: {
+            id: String,
+            token: String,
+            email: String,
+            name: String
+        },
+        local: {
+            name: 'John Doe',
+            email: 'john.doe@hotmail.com',
+            password: 'john123'
+        },
+        google: {
+            id: String,
+            token: String,
+            email: String,
+            name: String
+        },
     }]
 
-    "foodSchema": [{
+    "food": [{
     meal: 'Hamburger',
     brand: 'Burger King',
     servingSize: 1,
@@ -38,7 +67,7 @@ var MOCK_STATUS_UPDATES = {
     created_at: Date
     }],
 
-    "userSchema":[{
+    "user":[{
     local: {
         name: 'Jane Doe',
         email: 'jane.doe@hotmail.com',
