@@ -10,8 +10,7 @@ passport.use(new GoogleStrategy({
   callbackURL: "/auth/google/callback/",
   passReqToCallback: true
 },
-function(token, tokenSecret, profile, done){
-  console.log("Inside of GoogleStrategy");
+function(req, token, tokenSecret, profile, done){
   process.nextTick(function(){
     User.findOne({ googleId: profile.id}, function (err, user) {
       if (err)
